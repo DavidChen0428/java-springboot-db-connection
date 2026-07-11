@@ -66,4 +66,3 @@ public interface UserRepository extends JpaRepository<User, Integer> {
     List<User> findByIdBetween(Integer startId, Integer endId);
 }
 ```
-- 
