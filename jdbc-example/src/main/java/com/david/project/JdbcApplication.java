@@ -9,12 +9,12 @@ import org.springframework.core.env.Environment;
 import java.util.Optional;
 
 @SpringBootApplication
-public class Application {
+public class JdbcApplication {
 
-    private static final Logger logger = LoggerFactory.getLogger(Application.class);
+    private static final Logger logger = LoggerFactory.getLogger(JdbcApplication.class);
 
     public static void main(String[] args) {
-        SpringApplication app = new SpringApplication(Application.class);
+        SpringApplication app = new SpringApplication(JdbcApplication.class);
         Environment env = app.run(args).getEnvironment();
         logApplicationStartup(env);
     }
