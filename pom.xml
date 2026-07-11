@@ -27,6 +27,7 @@
         <module>jdbc-example</module>
         <module>mybatis-example</module>
         <module>jpa-example</module>
+        <module>r2dbc-example</module>
     </modules>
 
     <dependencyManagement>

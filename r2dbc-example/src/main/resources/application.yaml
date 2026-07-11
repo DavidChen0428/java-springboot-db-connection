@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: r2dbc-example
+  r2dbc:
+    url: r2dbc:h2:mem:///r2dbc-example-db?options=DB_CLOSE_DELAY=-1
+    driver-class-name: org.h2.Driver
+    username: admin
+    password: admin
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+  sql:
+    init:
+      mode: always
+
+server:
+  port: 8080
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui/index.html
+  api-docs:
+    path: /v3/api-docs
