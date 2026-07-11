@@ -9,35 +9,34 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.david.project</groupId>
-    <artifactId>java-springboot-template</artifactId>
+    <artifactId>java-springboot-db-connection</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>java-springboot-template</name>
-    <description>SpringBoot Template in version 4.1.0</description>
+    <name>java-springboot-db-connection</name>
+    <description>Describe database connection and how to use in project. (JDBC, JPA, MyBatis)</description>
+    <packaging>pom</packaging>
 
     <properties>
         <java.version>21</java.version>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
     </properties>
 
-    <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter</artifactId>
-        </dependency>
+    <modules>
+        <module>jdbc-example</module>
+        <module>mybatis-example</module>
+        <module>jpa-example</module>
+    </modules>
 
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-        </dependency>
-    </dependencies>
-
-    <build>
-        <plugins>
-            <plugin>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
                 <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>4.1.0</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
 </project>
