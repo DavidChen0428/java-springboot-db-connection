@@ -35,7 +35,7 @@
 
 - **Spring Data JDBC** <br>
     - 特色 : 拒絕魔法的 ORM <br>
-      它保留了 Spring Data Repository 的便利性（如 `findById`），但砍掉了 Hibernate
+      它保留了 Spring Data Repository 的便利性（如 `findById`），但砍掉了 Hibernate <br>
     - 複雜的狀態轉換與一級快取。 <br>
     - SQL 撰寫方式 : 自動生成 / 原生 SQL <br>
     - 優點 : 概念簡單、無快取/無 Session 負擔、直球對決 <br>
@@ -45,8 +45,7 @@
 ---
 
 - **jOOQ (Java Object Oriented Querying)** <br>
-  特色 : 透過 Codegen 讀取 DB Schema 並產生 Java 類別。你是在用 Java 寫
-  SQL，享受程式碼自動補全的快感，徹底告別拼錯欄位名稱的低級錯誤。 <br>
+  特色 : 透過 Codegen 讀取 DB Schema 並產生 Java 類別。你是在用 Java 寫 SQL，享受程式碼自動補全的快感，徹底告別拼錯欄位名稱的低級錯誤。 <br>
   SQL 撰寫方式 : Java 流式 API (Fluent) <br>
   優點 : 型別安全，欄位打錯在編譯期就報錯，兼顧 SQL 掌控度與安全 <br>
   缺點 : 需依賴外掛生成 Code，商業進階功能 (如 Oracle/SQL Server) 需付費 <br>

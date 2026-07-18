@@ -12,7 +12,7 @@
     <artifactId>java-springboot-db-connection</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>java-springboot-db-connection</name>
-    <description>Describe database connection and how to use in project. (JDBC, JPA, MyBatis)</description>
+    <description>Describe database connection and how to use in project. (JDBC, JPA, MyBatis, R2DBC, Spring Data JDBC)</description>
     <packaging>pom</packaging>
 
     <properties>
@@ -28,6 +28,8 @@
         <module>mybatis-example</module>
         <module>jpa-example</module>
         <module>r2dbc-example</module>
+        <module>spring-data-jdbc-example</module>
+        <module>jooq-example</module>
     </modules>
 
     <dependencyManagement>
